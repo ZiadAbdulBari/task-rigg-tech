@@ -25,8 +25,16 @@ export default {
     type: String,
     value: String
   },
+   emits: ["deleteRow"],
   name: 'TableData',
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+  button{
+    border:1px solid rgb(195, 195, 195);
+    border-radius: 5px;
+    background-color: rgb(247, 247, 247);
+    padding: 5px 10px;
+  }
+</style>

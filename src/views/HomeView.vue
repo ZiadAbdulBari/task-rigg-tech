@@ -38,11 +38,12 @@ export default {
     }
     // get product id but emited the event.
     // Delete api is working. But it is not able to delete item from the list because of it is a demo api.
-    // But when i hit the delete api with the product id, it returns isDeleted:true
+    // But when i hit the delete api with the product id, it returns isDeleted:true and I menually remove that product from product array.
     const removeRow = (id)=>{
       axios.delete(`https://dummyjson.com/products/${id}`).then((response)=>{
         if(response.status==200){
-          getProduct();
+          const filteredProduct = state.products.filter((product)=>product.id!=id);
+          state.products=filteredProduct;
         }
       })
     }

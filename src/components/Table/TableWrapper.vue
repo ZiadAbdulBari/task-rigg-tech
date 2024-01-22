@@ -18,19 +18,18 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 table, th, td {
   border: 1px solid rgb(215, 215, 215);
   border-collapse: collapse;
+  padding: 5px 10px;
 }
 table tr th{
   text-align: left;
-  padding: 0 10px;
+  font-weight: 700;
 }
 table tr{
-  padding: 10px 10px!important;
-  border: 1px solid rgb(215, 215, 215);
-  border-collapse: collapse;
+  border: 1px solid rgb(215, 215, 215)!important;
 }
 table{
   width: 70%!important;
